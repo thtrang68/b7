@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cá Nhân</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <a href="#" onclick="toggleSection('profile')"><i class="fas fa-user"></i> Hồ sơ</a>
+        <a href="#" onclick="toggleSection('exercise-list')"><i class="fas fa-book"></i> Bài tập</a>
+    </div>
+
+    <div id="profile" class="profile">
+        <h2>Hồ sơ cá nhân</h2>
+        <p><strong>Tên:</strong> Trần Thùy Trang</p>
+        <p><strong>Ngày sinh:</strong> 06/08/2006</p>
+        <p><strong>Lớp học:</strong> CNTTD2024A</p>
+        <p><strong>Ngành học:</strong> Công nghệ Thông tin</p>
+        <p><strong>Trường học:</strong> Đại học Thủ Đô Hà Nội</p>
+        <p><strong>Nơi sống:</strong> Hà Nội</p>
+    </div>
+
+    <div id="exercise-list" class="exercise-list">
+        <h2>Bài tập</h2>
+        <p onclick="toggleSection('session1')">Buổi 1</p>
+        <p onclick="toggleSection('session2')">Buổi 2</p>
+        <p onclick="toggleSection('session3')">Buổi 3</p>
+        <p onclick="toggleSection('session4')">Buổi 4</p>
+        <p onclick="toggleSection('session5')">Buổi 5</p>
+        <p onclick="toggleSection('session6')">Buổi 6</p>
+    </div>
+
+    <div id="session1" class="exercise">
+        <h3>Buổi 1: HTML & CSS cơ bản</h3>
+        <p>Bài 1: Tạo trang web đơn giản</p>
+        <p>Bài 2: Sử dụng thẻ HTML cơ bản</p>
+    </div>
+
+    <div id="session6" class="exercise">
+        <h3>Buổi 6: Layer</h3>
+        <p>Bài 1: <a href="https://thtrang68.github.io/bai-1-b7/" target="_blank"> bài tập trên lớp </a></p>
+    </div>
+
+    <button class="back-button" onclick="goBack()">Quay lại</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

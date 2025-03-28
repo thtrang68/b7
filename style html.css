@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu a {
+    color: rgb(243, 211, 211);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+.menu a i {
+    margin-right: 5px;
+}
+
+.profile, .exercise-list, .exercise {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+}
+
+.back-button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(230, 190, 190);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #575757;
+}
+
+.exercise-list p {
+    cursor: pointer;
+    color: rgb(55, 55, 146);
+}
+
+.exercise-list p:hover {
+    text-decoration: underline;
+}
